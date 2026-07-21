@@ -231,7 +231,7 @@
 
       var accessKey = form.querySelector('input[name="access_key"]').value;
       if (!accessKey || accessKey === "YOUR_ACCESS_KEY_HERE") {
-        statusEl.textContent = "Form isn't connected yet — email palissawashington@gmail.com directly for now.";
+        statusEl.textContent = "Form isn't connected yet — please try again shortly or reach out on LinkedIn.";
         statusEl.style.color = "#f0b429";
         return;
       }
@@ -255,12 +255,12 @@
             statusEl.style.color = "#2dd4bf";
             form.reset();
           } else {
-            statusEl.textContent = "Something went wrong. Please email palissawashington@gmail.com directly.";
+            statusEl.textContent = "Something went wrong. Please try again in a moment.";
             statusEl.style.color = "#f0b429";
           }
         })
         .catch(function () {
-          statusEl.textContent = "Something went wrong. Please email palissawashington@gmail.com directly.";
+          statusEl.textContent = "Something went wrong. Please try again in a moment.";
           statusEl.style.color = "#f0b429";
         })
         .finally(function () {
