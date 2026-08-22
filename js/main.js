@@ -251,7 +251,7 @@
         .then(function (res) { return res.json(); })
         .then(function (data) {
           if (data.success) {
-            statusEl.textContent = "Thanks — I'll be in touch soon.";
+            statusEl.textContent = "Thanks — your paid audit inquiry is in. I'll review your lead-flow details and follow up.";
             statusEl.style.color = "#2dd4bf";
             form.reset();
           } else {

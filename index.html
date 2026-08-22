@@ -36,7 +36,7 @@
       <a href="#why">Why Me</a>
       <a href="#tools">Tools</a>
       <a href="#offer">The Audit</a>
-      <a href="#contact" class="nav-cta">Book a Call</a>
+      <a href="#contact" class="nav-cta">Request the $97&ndash;$297 Paid Audit</a>
     </nav>
     <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
       <span></span><span></span><span></span>
@@ -55,7 +55,7 @@
       <p class="hero-sub reveal">I help small businesses save 10–30 hours a month, reduce manual work, and run smarter operations — by turning repetitive tasks into AI-powered systems.</p>
       <p class="hero-sub-2 reveal">Backed by 12+ years of IT infrastructure experience, I build automation the way engineers build systems: documented, reliable, and designed to still work in month six.</p>
       <div class="hero-actions reveal">
-        <a href="#contact" class="btn btn-primary">Book a Free AI Automation Audit</a>
+        <a href="#contact" class="btn btn-primary">Request the $97&ndash;$297 Paid Audit</a>
       </div>
     </div>
     <div class="scroll-cue reveal" aria-hidden="true">
@@ -118,7 +118,7 @@
         <div class="card card-lg reveal">
           <span class="card-index">01</span>
           <h3>AI Automation Audit</h3>
-          <p>A practical review of your workflows to identify what to automate first, what to leave alone, and how to phase it in without breaking anything. You leave with a 30-day implementation roadmap.</p>
+          <p>A paid $97&ndash;$297, 30-minute review of exactly where leads are falling through in your business. You leave with a concrete 30-day implementation roadmap and no commitment beyond the audit.</p>
         </div>
         <div class="card card-lg reveal">
           <span class="card-index">02</span>
@@ -209,47 +209,104 @@
   <section class="section section-offer" id="offer">
     <div class="container container-narrow offer-box reveal">
       <h2 class="section-title">The AI Automation Audit</h2>
-      <p>A practical review of your business workflows that ends with a concrete plan — not theory.</p>
-      <p class="offer-lead">You'll leave with:</p>
+      <p class="offer-price">$97&ndash;$297 paid audit &middot; 30-minute review</p>
+      <p>A focused look at your intake-to-booking process that ends with a concrete plan — not theory, and no commitment beyond the audit.</p>
+      <p class="offer-lead">What you receive:</p>
       <ul class="offer-list">
-        <li>A map of where your business is losing time every week</li>
-        <li>The 3 workflows worth automating first (and which ones to skip)</li>
-        <li>Specific tool recommendations for your stack</li>
-        <li>A 30-day implementation roadmap you can run yourself or hire me to build</li>
+        <li>A review of exactly where leads are falling through</li>
+        <li>A concrete 30-day implementation roadmap</li>
+        <li>A clear picture of what fixing the gaps would look like for your business</li>
       </ul>
-      <a href="#contact" class="btn btn-primary">Book Your AI Automation Audit</a>
+      <a href="#contact" class="btn btn-primary">Request the $97&ndash;$297 Paid Audit</a>
     </div>
   </section>
 
   <!-- 8. Final CTA + Contact -->
   <section class="section section-contact" id="contact">
     <div class="container container-narrow">
-      <h2 class="section-title reveal">Ready to Stop Doing the Same Tasks Every Week?</h2>
-      <p class="reveal">Let's figure out which workflows in your business are quietly stealing the most time — and build a plan to automate them.</p>
+      <h2 class="section-title reveal">Start With the Paid AI Automation Audit</h2>
+      <p class="reveal">The $97&ndash;$297 audit is a 30-minute review of where leads are falling through, followed by a concrete 30-day implementation roadmap. Answer the questions below so I can understand your lead flow before we talk.</p>
 
       <form class="contact-form reveal" id="contactForm" action="https://api.web3forms.com/submit" method="POST">
         <!-- Replace YOUR_ACCESS_KEY_HERE with a free key from web3forms.com — see README -->
         <input type="hidden" name="access_key" value="6c17f5e3-1957-4e75-9855-9664d26eb63a">
-        <input type="hidden" name="subject" value="New inquiry from palissawashington.com">
+        <input type="hidden" name="subject" value="Paid AI Automation Audit inquiry ($97–$297)">
         <input type="checkbox" name="botcheck" class="hidden-field" style="display:none">
 
-        <div class="form-row">
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" required>
+        <div class="form-intro">
+          <h3>Tell me how leads reach you now</h3>
+          <p>This inquiry is for the paid $97&ndash;$297 audit. Your answers help focus the 30-minute review on the gaps that matter.</p>
         </div>
-        <div class="form-row">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" required>
+
+        <div class="form-grid">
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" autocomplete="name" required>
+          </div>
+          <div class="form-row">
+            <label for="email">Work email</label>
+            <input type="email" id="email" name="email" autocomplete="email" required>
+          </div>
         </div>
-        <div class="form-row">
-          <label for="business">Business type</label>
-          <input type="text" id="business" name="business" placeholder="e.g. HVAC, coaching, bookkeeping">
+
+        <div class="form-grid">
+          <div class="form-row">
+            <label for="business_name">Business name</label>
+            <input type="text" id="business_name" name="business_name" autocomplete="organization" required>
+          </div>
+          <div class="form-row">
+            <label for="business_type">Business type</label>
+            <input type="text" id="business_type" name="business_type" placeholder="e.g. HVAC, cleaning, landscaping" required>
+          </div>
         </div>
+
         <div class="form-row">
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="4" required></textarea>
+          <label for="lead_channels">Where do most new leads reach you?</label>
+          <select id="lead_channels" name="primary_lead_channel" required>
+            <option value="">Select the primary channel</option>
+            <option>Phone calls</option>
+            <option>Text messages</option>
+            <option>Website forms</option>
+            <option>Social media DMs</option>
+            <option>Several channels</option>
+            <option>Other</option>
+          </select>
         </div>
-        <button type="submit" class="btn btn-primary btn-block">Book Your AI Automation Audit</button>
+
+        <div class="form-row">
+          <label for="lead_volume">About how many new leads do you receive in a typical month?</label>
+          <select id="lead_volume" name="monthly_lead_volume" required>
+            <option value="">Select a range</option>
+            <option>Fewer than 10</option>
+            <option>10–25</option>
+            <option>26–50</option>
+            <option>51–100</option>
+            <option>More than 100</option>
+            <option>Not sure</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <label for="after_hours">What happens when a lead comes in after hours or while your team is on a job?</label>
+          <textarea id="after_hours" name="after_hours_lead_process" rows="3" placeholder="Tell me who responds, how quickly, and where the lead is recorded." required></textarea>
+        </div>
+
+        <div class="form-row">
+          <label for="current_tools">What CRM, calendar, phone, or form tools are involved now?</label>
+          <textarea id="current_tools" name="current_lead_tools" rows="3" placeholder="List the tools you use, or write “none.”" required></textarea>
+        </div>
+
+        <div class="form-row">
+          <label for="lead_gap">Where do you think leads are most likely to fall through?</label>
+          <textarea id="lead_gap" name="suspected_lead_gap" rows="3" required></textarea>
+        </div>
+
+        <label class="form-confirmation" for="paid_audit_confirmed">
+          <input type="checkbox" id="paid_audit_confirmed" name="paid_audit_confirmed" value="Yes — I understand the audit is paid at $97–$297" required>
+          <span>I understand this is a paid $97&ndash;$297 AI Automation Audit, not a free consultation.</span>
+        </label>
+
+        <button type="submit" class="btn btn-primary btn-block">Request the $97&ndash;$297 Paid Audit</button>
         <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
       </form>
 
