@@ -1,6 +1,6 @@
 # Palissa Washington — Personal Brand Website
 
-Single-page site for Palissa Washington, AI Automation Strategist for small businesses. Plain HTML, CSS, and JavaScript — no framework, no build step.
+Single-page site for Palissa Washington, AI Workflow Architect for service businesses. Plain HTML, CSS, and JavaScript — no framework, no build step.
 
 **Stack:** HTML/CSS/JS · GSAP + ScrollTrigger for scroll animation · Lenis for smooth scroll · Web3Forms for the contact form (no backend)
 
