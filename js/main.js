@@ -251,8 +251,16 @@
         .then(function (res) { return res.json(); })
         .then(function (data) {
           if (data.success) {
-            statusEl.textContent = "Thanks — your paid audit inquiry is in. I'll review your lead-flow details and follow up.";
+            statusEl.textContent = "Thanks — your inquiry is in. Next step: pay for your audit, then pick your call time. ";
             statusEl.style.color = "#2dd4bf";
+            var payLink = document.createElement("a");
+            payLink.href = "https://buy.stripe.com/28E8wOgOu9EAfSi9Vq9MY00";
+            payLink.className = "btn btn-primary";
+            payLink.style.marginTop = "12px";
+            payLink.style.display = "inline-block";
+            payLink.textContent = "Pay $197 and book your audit";
+            statusEl.appendChild(document.createElement("br"));
+            statusEl.appendChild(payLink);
             form.reset();
           } else {
             statusEl.textContent = "Something went wrong. Please try again in a moment.";
